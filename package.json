@@ -1,0 +1,20 @@
+{
+  "name": "iconos",
+  "version": "1.0.0",
+  "description": "Transform all svg from the current folder to react components elements and tell you that you are a giga bogoss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Benoit Carquillat & Tymate",
+  "license": "Apache-2.0",
+  "bin": {
+    "iconos": "./bin/index.mjs"
+  },
+  "dependencies": {
+    "@svgr/core": "^6.5.1",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "prettier": "^2.8.4"
+  }
+}
