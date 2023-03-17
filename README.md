@@ -7,8 +7,7 @@ This command-line interface (CLI) tool converts SVG files into React components.
 To use this tool, you must first install it by running the following commands:
 
 ```
-npm i
-npm install -g .
+npm install -g iconos
 ```
 
 ## Usage
