@@ -8,7 +8,7 @@ This command-line interface (CLI) tool converts SVG files into React components.
 npx iconos
 ```
 
-## Installation
+## Installation (optional) if you want to use the cli without npx.
 
 To use this tool, you must first install it by running the following commands:
 
