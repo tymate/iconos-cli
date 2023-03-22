@@ -13,7 +13,8 @@ const componentsDir = "./components";
   const colorResponse = await prompts({
     type: "text",
     name: "value",
-    message: "Quelle couleur remplacer par currentColor (ex: #101828) ?",
+    message:
+      "Which color do you want to replace by currentColor, leave empty if you don't need it. (ex: #101828) ?",
   });
 
   // Vérifier si le dossier components existe, sinon le créer
@@ -61,7 +62,7 @@ const componentsDir = "./components";
           .replace(/import \* as React from "react";\n/, "")
           .replace(/\n/g, "\n\n");
 
-        console.log(`${componentName} ✅ - you're a giga bogoss`);
+        console.log(`${componentName} ✅ - created`);
 
         fs.writeFileSync(
           path.join(componentsDir, `${componentName}.tsx`),

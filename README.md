@@ -1,10 +1,14 @@
 # SVG to React Component CLI
 
-This command-line interface (CLI) tool converts SVG files into React components. It allows developers to easily import SVG icons into their React projects.
+This command-line interface (CLI) tool converts SVG files into React components from your current folder.
+It allows developers to easily import SVG icons into their React projects.
 
 ## Quick start
 
+Go to your folder with your list of svgs and run:
+
 ```
+cd paths/to/your/svg/files
 npx iconos
 ```
 
