@@ -50,6 +50,11 @@ const componentsDir = "./components";
           /<svg([\s\S]*?)>/,
           `<svg$1 style={{ ...props.style, color: props.color, fontSize: props.size }}>`
         );
+        // Ajouter la props size
+        fileContentProps = jsCode.replace(
+          /SVGProps<SVGSVGElement>/,
+          `SVGProps<SVGSVGElement>  & { size?: number }`
+        );
 
         // Ajouter la balise style avec les props passées
         fileContentProps = fileContentProps
