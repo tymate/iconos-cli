@@ -27,10 +27,10 @@ const componentsDir = "./components";
 
     // Vérifier si le fichier est un fichier SVG
     if (path.extname(filePath).toLowerCase() === ".svg") {
-      const componentName = `${file.charAt(0).toUpperCase()}${file.slice(
+      const componentName = `Ic${file.charAt(0).toUpperCase()}${file.slice(
         1,
         -4
-      )}`.replace(/-./g, (x) => x[1].toUpperCase());
+      )}`.replace(/[-_ ]./g, (x) => x[1].toUpperCase());
       const fileContent = fs.readFileSync(filePath, "utf8");
 
       try {
