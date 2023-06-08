@@ -27,7 +27,7 @@ const componentsDir = "./components";
 
     // Vérifier si le fichier est un fichier SVG
     if (path.extname(filePath).toLowerCase() === ".svg") {
-      const componentName = `Ic${file.charAt(0).toUpperCase()}${file.slice(
+      const componentName = `${file.charAt(0).toUpperCase()}${file.slice(
         1,
         -4
       )}`.replace(/[-_ ]./g, (x) => x[1].toUpperCase());
