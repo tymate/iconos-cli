@@ -1,6 +1,6 @@
 {
   "name": "iconos",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Transform all svg from the current folder to react components elements",
   "main": "index.js",
   "scripts": {
